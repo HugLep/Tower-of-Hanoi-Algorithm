@@ -27,9 +27,11 @@ The Tower of Hanoi is a mathematical logic game invented by French mathematician
 ### Recursion Principle
 
 Solving the Tower of Hanoi relies on recursion, a method where a complete solution is constructed by solving several similar subproblems. Here is how it works: Splitting the problem: Consider moving 𝑛 n disks from the starting base to the destination base.
-Recursive steps: Move the 𝑛 − 1 disks from the starting base to the intermediate base.
-Move the largest disk directly to the destination base.
-Move the 𝑛 − 1 disks from the intermediate base to the destination base.
+
+Recursive steps:
+- Move the 𝑛 − 1 disks from the starting base to the intermediate base.
+- Move the largest disk directly to the destination base.
+- Move the 𝑛 − 1 disks from the intermediate base to the destination base.
 
 ### Solving Strategy
 
