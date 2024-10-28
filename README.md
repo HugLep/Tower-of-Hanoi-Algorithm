@@ -33,7 +33,7 @@ Move the 𝑛 − 1 disks from the intermediate base to the destination base.
 
 ### Solving Strategy
 
-The number of moves needed to solve a Tower of Hanoi with 𝑛 disks is 2 𝑛 − 1. For example, for three disks, it will take at least 7 moves. This formula highlights the rapid growth of the complexity of the game with the increase in the number of disks, each addition of disk doubling the number of moves required.
+The number of moves needed to solve a Tower of Hanoi with 𝑛 disks is 2^𝑛 − 1. For example, for three disks, it will take at least 7 moves. This formula highlights the rapid growth of the complexity of the game with the increase in the number of disks, each addition of disk doubling the number of moves required.
 
 ### Applications and Uses
 
