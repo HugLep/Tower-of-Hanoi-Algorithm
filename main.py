@@ -70,11 +70,9 @@ def ring_move_r2b(ring_a, base_b_index):
         index_base_a += 1
     
     if ring_a_valid != True:
-        print("Erreur 01 : 1/ ring_a (", ring_a, ") ne peux être déplacé.  2/ ring_a (", ring_a, ") n'existe pas.")
         return 1
     if len(base_b) > 0:
         if ring_a > base_b[len(base_b) - 1]:
-            print("02 :  ring_a (", ring_a, ") ne peux pas aller sur le prochain socle car ring_a (", ring_a, ") est plus grand que le ring le plus élevé du prochain socle")
             return 2
 
     match index_base_a:
@@ -102,11 +100,11 @@ height = int(input("height : "))
 tower_initialization(height)
 tower_print()
 
-input_ring_a = int(input("Quelle anneau voulais vous bouger              : "))
-input_base_b = int(input("Sur quelles socle voulais vous mettre l'anneau : "))
+input_ring_a = int(input("Ring to move       : "))
+input_base_b = int(input("Towards which base : "))
 while input_ring_a != -1 and (input_base_b >= 1 and input_base_b <= BASES_NB) and (input_ring_a >= 1 and input_ring_a <= height):
     ring_move_r2b(input_ring_a, input_base_b)
     tower_print()
 
-    input_ring_a = int(input("Quelle anneau voulais vous bouger              : "))
-    input_base_b = int(input("Sur quelles socle voulais vous mettre l'anneau : "))
+    input_ring_a = int(input("Ring to move       : "))
+    input_base_b = int(input("Towards which base : "))
